@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1,width=device-width">
+        <meta name="viewport" content="initial-scale=1.0,width=device-width">
         <title>WM.express</title>
         <link href="./css/style.css" rel="stylesheet">
     </head>
@@ -192,13 +192,15 @@
                     <div class="inputWrapper__name">
                         Отдаете (QIWI RUB)
                     </div>
-                    <input type="text" class="inputWrapper__input inputWrapper__input_amount inputWrapper__input_qiwi" placeholder="Min: 5000; Max: 100000">
+                    <label class="inputWrapper__placeholder inputWrapper__placeholder_amount" for="inputQiwi">Min: 5000; Max: 100000</label>
+                    <input type="text" id="inputQiwi" class="inputWrapper__input inputWrapper__input_amount inputWrapper__input_qiwi" placeholder="">
                 </div>
                 <div class="inputWrapper">
                     <div class="inputWrapper__name">
                         Получаете (Яндекс.Деньги)
                     </div>
-                    <input type="text" class="inputWrapper__input inputWrapper__input_amount inputWrapper__input_yandex" placeholder="Min: 4850.00; Max: 97000.00">
+                    <label class="inputWrapper__placeholder inputWrapper__placeholder_amount" for="inputYandex">Min: 4850.00; Max: 97000.00</label>
+                    <input type="text" id="inputYandex" class="inputWrapper__input inputWrapper__input_amount inputWrapper__input_yandex" placeholder="">
                 </div>
                 <div class="exchange__caption">
                     <h3 class="h3">Реквизиты</h3>
@@ -207,19 +209,22 @@
                     <div class="inputWrapper__name">
                         QIWI.кошелек (без “+”)
                     </div>
-                    <input type="text" class="inputWrapper__input inputWrapper__input_requisites inputWrapper__input_wallet" placeholder="Пример: 38066..., 7916..., ...">
+                    <label class="inputWrapper__placeholder inputWrapper__placeholder_requisites" for="inputQiwiRequisites">Пример: 38066..., 7916..., ...</label>
+                    <input type="text" id="inputQiwiRequisites" class="inputWrapper__input inputWrapper__input_requisites inputWrapper__input_wallet" placeholder="">
                 </div>
                 <div class="inputWrapper">
                     <div class="inputWrapper__name">
                         Яндекс.Счет
                     </div>
-                    <input type="text" class="inputWrapper__input inputWrapper__input_requisites inputWrapper__input_wallet" placeholder="Пример: 410011234567890">
+                    <label class="inputWrapper__placeholder inputWrapper__placeholder_requisites" for="inputYanadexRequisites">Пример: 410011234567890</label>
+                    <input type="text" id="inputYanadexRequisites" class="inputWrapper__input inputWrapper__input_requisites inputWrapper__input_wallet" placeholder="">
                 </div>
                 <div class="inputWrapper">
                     <div class="inputWrapper__name">
                         E-mail
                     </div>
-                    <input type="text" class="inputWrapper__input inputWrapper__input_requisites inputWrapper__input_email" placeholder="user@mail.com">
+                    <label class="inputWrapper__placeholder inputWrapper__placeholder_requisites" for="inputEmail">user@mail.com</label>
+                    <input type="text" id="inputEmail" class="inputWrapper__input inputWrapper__input_requisites inputWrapper__input_email" placeholder="">
                 </div>
                 <div class="checkboxWrapper">
                     <div class="checkboxWrapper__checkbox">
@@ -249,5 +254,6 @@
                 2015-2020 WM express 
             </div>
         </footer>
+        <script src="./js/main.js"></script>
     </body>
 </html>    

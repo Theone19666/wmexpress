@@ -154,6 +154,9 @@ a {
 .exchange__caption {
     margin-bottom: 13px;
 }
+.inputWrapper {
+    position: relative;
+}
 .inputWrapper:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -175,6 +178,21 @@ a {
     color: #9B9B9B;
     /* width: 260px; */
     width: 23vw;
+}
+.inputWrapper__placeholder {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    color: #9B9B9B;
+    position: absolute;
+    z-index: 1;
+    top: 54%;
+}
+.inputWrapper__placeholder_amount {
+    left: 13px;
+}
+.inputWrapper__placeholder_requisites {
+    left: 39px;
 }
 .inputWrapper__input_amount {
     padding: 15px 76px 15px 13px;
@@ -273,7 +291,7 @@ a {
 .footer__linkImg {
     margin-left: 5px;
 }
-@media screen and (max-width: 1139px) {
+@media all and (max-width: 1139px) {
     .main {
         flex-direction: column;
     }
